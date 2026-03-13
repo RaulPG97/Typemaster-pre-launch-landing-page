@@ -14,29 +14,28 @@
     <title>Frontend Mentor | Typemaster pre-launch landing page</title>
   </head>
   <body>
-    <div>
+    <div class="container">
       <!-- header -->
-      <header>
-        <img src="./assets/shared/logo.svg" alt="Typemaster logo" />
-        <a href="#">Pre-order now</a>
+      <header class="header">
+        <img  src="./assets/shared/logo.svg" alt="Typemaster logo" />
+        <a class="header__btn" href="#">Pre-order now</a>
       </header>
       <!-- main section -->
-      <main>
+      <main class="main">
         <!-- first section -->
-        <section>
-          <div>
+        <section class="hero">
+          <div class="hero__content">
             <h1>Typemaster keyboard</h1>
-            <p>
               Improve your productivity and gaming without breaking the bank.
               Upgrade to a high quality mechanical typing experience.
             </p>
           </div>
 
-          <div>
+          <div class="hero__cta">
             <a href="#">Pre-order now</a>
             <span>Release on 5/27</span>
           </div>
-          <div>
+          <div class="hero__image">
             <img
               src="./assets/mobile/image-keyboard.jpg"
               alt="Typemaster keyboard"
@@ -44,9 +43,9 @@
           </div>
         </section>
         <!-- second section -->
-        <section>
-          <div>
-            <img
+        <section class="product__info">
+          <div class="product__info__images">
+            <img 
               src="./assets/mobile/image-phone-and-keyboard.jpg"
               alt="Typemaster keyboard and phone"
             />
@@ -56,7 +55,7 @@
             />
           </div>
 
-          <div>
+          <div class="product__info__content">
             <h2>Mechanical wireless keyboard</h2>
             <p>
               The Typemaster keyboard boasts top-notch build and practical
@@ -66,8 +65,9 @@
           </div>
         </section>
         <!-- tird section -->
-        <section>
-          <article>
+        <section class="features">
+
+          <article class="feature__card">
             <img
               src="./assets/shared/icon-compatible.svg"
               alt="Compatible icon"
@@ -82,7 +82,7 @@
             </div>
           </article>
 
-          <article>
+          <article class="feature__card">
             <img
               src="./assets/shared/icon-bluetooth.svg"
               alt="Bluetooth icon"
@@ -97,7 +97,7 @@
             </div>
           </article>
 
-          <article>
+          <article class="feature__card">
             <img src="./assets/shared/icon-battery.svg" alt="Battery icon" />
             <div>
               <h3>High capacity battery</h3>
@@ -109,7 +109,7 @@
             </div>
           </article>
 
-          <article>
+          <article class="feature__card">
             <img src="./assets/shared/icon-light.svg" alt="Light ball icon" />
             <div>
               <h3>RGB backlit modes</h3>
@@ -123,7 +123,7 @@
         </section>
       </main>
       <!-- footer -->
-      <footer>
+      <footer class="footer">
         <p>Typemaster 2021 | All Rights Reserved</p>
       </footer>
     </div>
