@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Barlow black";
+    src: url(./fonts/Barlow-Black.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Barlow medium";
+    src: url(./fonts/Barlow-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Barlow bold";
+    src: url(./fonts/Barlow-Bold.ttf) format('truetype');
+}
