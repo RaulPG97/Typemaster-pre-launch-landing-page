@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+body {
+  min-height: 100vh;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  padding: 24px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.header{
+  width: 100%;
+  max-width:343px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header img{
+  width: 40px;
+}
+.header__btn{
+  width: 154px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+/* styling purpose */
+.header,
+.main,
+.footer {
+  width: 100%;
+  max-width:343px;
+}
+
+.hero__image img,
+.product__info img {
+  width: 200px;
+}
