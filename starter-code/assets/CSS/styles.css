@@ -1,3 +1,5 @@
+html,
+body,
 *,
 *::before,
 *::after {
@@ -6,38 +8,39 @@
   box-sizing: border-box;
   /* outline: 1px solid red; */
 }
+html,
 body {
+  width: 100%;
   min-height: 100vh;
 }
 
 .container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-
-  padding: 24px 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap:40px */
+
+  max-width: 1440px;
+  /* margin: 0 auto; */
+  padding: 24px 0;
 }
 .header {
-  width: 100%;
-  max-width: 343px;
-  height: 48px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  align-items: center;
+
+  width: 90%;
+  min-width: 343px;
+  /* margin-bottom: 40px; */
+  flex-shrink: 1;
+  /* margin: 0 auto; */
 }
 .header img {
-  width: 40px;
+  min-width: 40px;
+  height: auto;
 }
 .header__btn {
-  width: 154px;
-  height: 48px;
+  min-width: 154px;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,19 +54,25 @@ body {
 }
 .main {
   width: 100%;
-  max-width: 343px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+
+  margin: 0 auto;
 }
 .hero {
+  width: 100%;
+  min-width: 343px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  margin-bottom: 24px;
 }
-.hero__content  h1{
+.hero__content {
+  min-width: 343px;
+  margin: 32px;
+}
+.hero__content h1 {
   font-family: "Barlow black";
   font-size: 48px;
   text-align: left;
@@ -73,17 +82,117 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 24px;
 }
+.hero__content p {
+  font-family: "Barlow medium";
+  font-size: 16px;
+  text-align: left;
+  color: #5d6d8f;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+.hero__cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 84%;
+  min-width: 343px;
+  height: 56px;
+  gap: 24px;
+}
+.hero__cta a {
+  width: 154px;
+  height: 56px;
+  display: flex;
+  margin-right: 10px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Barlow bold";
+  font-size: 16px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f16718;
+  cursor: pointer;
+}
+.hero__cta span {
+  font-family: "Barlow bold";
+  font-size: 16px;
+  color: #5d6d8f;
+  text-align: left;
+}
+.hero__image {
+  width: 91%;
+  min-width: 343px;
+  height: 331px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+.hero__image img {
+  width: 100%;
+  min-width: 343px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.product__info {
+  width: 100%;
+  min-width: 372px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.product__info__images {
+  width: 100%;
+  min-width: 343px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  padding-right: 12px;
+}
+.info__images__1 {
+  flex-grow: 1;
+  min-width: 119px;
+  background-image: url("../mobile/image-phone-and-keyboard.jpg");
+  background-size: 120%;
+    background-position: 95% center;
+    background-repeat: no-repeat;
+  border-radius: 0 20px 20px 0;
 
+    position: relative;
+  overflow: hidden;
+
+}
+ .info__images__1::after { 
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #F16718; 
+  opacity: 1;
+  mix-blend-mode: multiply;
+} 
+.info__images__2 {
+  flex-grow: 1;
+  min-width: 210px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
 
 /* styling purpose */
-.header,
+
+/* .header,
 .main,
 .footer {
   width: 100%;
   max-width: 343px;
-}
-
-.hero__image img,
-.product__info img {
-  width: 200px;
-}
+} */
